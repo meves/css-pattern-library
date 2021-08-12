@@ -1,0 +1,54 @@
+/*
+Центрирование текста
+
+Выравнивание текста по центру блока с помощью свойства text-center
+
+Markup:
+<p class="text-center">Центрированный текст</p>
+
+Weight: 1
+
+Styleguide Utilities.text-center
+*/
+.text-center {
+    text-align: center !important;
+}
+
+/*
+Выравнивание по левому краю
+
+Для выравнивания контента по левому краю
+используйте свойство float-left
+
+Weight: 3
+
+Styleguide Utilities.float-left
+*/
+.float-left {
+    float: left;
+}
+
+/*
+Класс clearfix
+
+Назначьте элементу класс clearfix для сброса
+обтекания плавающего контента
+
+Markup:
+<div class="clearfix">
+    <span class="float-left">floated</span>
+</div>
+
+Weight: 2
+
+Styleguide Utilities.clearfix
+*/
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}

@@ -1,0 +1,53 @@
+/*
+Media
+
+Отображает изображение и/или содержимое тела рядом друг с другом
+
+Markup:
+<div class="media">
+    <img class="media__image" src="http://placehold.it/150xl50” />
+    <div class="media__ body”>
+        <h4>Физкультура</h4>
+        <p>
+        Физическая подготовка &mdash; важная составляющая
+        профилактики травматизма. Сосредоточьтесь
+        на своем теле &mdash; особенно на ногах.
+        </р>
+    </div>
+</div>
+<div class="media">
+    <img class="media__ image" src="http://placehold.it/150xl50" />
+    <div class="media__ body">
+        <h4>Физкультура</h4>
+        <p>
+        Физическая подготовка &mdash; важная составляющая
+        профилактики травматизма. Сосредоточьтесь
+        на своем теле &mdash; особенно на ногах.
+        </р>
+    </div>
+    <img class="media__ image" src="http://placehold.it/150xl50" />
+</div>
+
+Styleguide Media
+*/
+
+.media {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.5em;
+    background-color: #eee;
+    border-radius: 0.5em;
+    }
+    .media > * + * {
+    margin-left: 1.5em;
+    }
+    .media__ image {
+    float: left;
+    margin-right: 1.5em;
+    }
+    .media__ body {
+    margin-top: 0;
+    }
+    .media__ body > h4 {
+    margin-top: 0;
+    }
